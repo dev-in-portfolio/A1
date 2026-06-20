@@ -1,67 +1,235 @@
-<HTML>
-<HEAD>
-<TITLE>Alex's 35th Birthday</TITLE>
-</HEAD>
-<BODY BGCOLOR="#C0C0C0" TEXT="#000000" LINK="#0000EE" VLINK="#551A8B">
-<H1>Happy Birthday Alex</H1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>HAPPY BIRTHDAAAAY!!!</title>
+<style>
+  body {
+    background: #FF00FF url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100"><circle cx="20" cy="20" r="4" fill="%23FFFF00" opacity="0.5"/><circle cx="80" cy="60" r="3" fill="%2300FFFF" opacity="0.5"/><circle cx="50" cy="80" r="5" fill="%2300FF00" opacity="0.4"/><circle cx="70" cy="15" r="3" fill="%23FF0000" opacity="0.5"/><circle cx="10" cy="70" r="4" fill="%23FFA500" opacity="0.4"/></svg>');
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><text y="20" font-size="20">⭐</text></svg>'), auto;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    text-align: center;
+    padding: 20px;
+  }
 
-<P>
-<HR><STRONG>Newsletter: 35th Birthday Edition</STRONG><HR>
-</P>
+  h1 {
+    font-size: 60px;
+    color: #FF0000;
+    text-shadow: 4px 4px 0 #0000FF, 7px 7px 0 #FFFF00;
+    margin-bottom: 5px;
+  }
 
-<P>
-To: alex@localhost<BR>
-From: friends@localhost<BR>
-Subject: Happy 35th Birthday!<BR>
-Date: 20 June 1991
-</P>
+  h1 em {
+    font-size: 80px;
+    color: #00FF00;
+    text-shadow: 3px 3px 0 #FF00FF;
+    display: block;
+  }
 
-<HR>
+  .rainbow {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FF0000, #FFA500, #FFFF00, #00FF00, #0000FF, #8B00FF, #FF00FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin: 10px 0;
+  }
 
-<H2>About This Page</H2>
+  .cake {
+    font-size: 100px;
+    line-height: 1;
+    margin: 10px 0;
+    display: block;
+    animation: bounce 1s ease infinite;
+  }
 
-<P>
-This is a <A HREF="http://info.cern.ch/hypertext/WWW/TheProject.html">World Wide Web</A>
-page made specially for Alex's 35th birthday. It was created using HTML and viewed
-in <A HREF="">NCSA Mosaic</A> or <A HREF="">Lynx</A>.
-</P>
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
 
-<H2>Birthday Facts</H2>
+  .box {
+    background: #FFFFFF;
+    border: 5px ridge #FFA500;
+    padding: 15px 25px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 8px 8px 0 #0000FF;
+  }
 
-<P>
-<UL>
-<LI>Name: Alex
-<LI>Age: 35
-<LI>Born: 1956
-<LI>Status: Still going strong
-</UL>
-</P>
+  .box h2 {
+    color: #0000FF;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    text-decoration: underline wavy #FF00FF;
+  }
 
-<H2>A Short Poem</H2>
+  .box p {
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.5;
+  }
 
-<P>
-Thirty five years have passed your way,<BR>
-Another birthday's here today.<BR>
-You're not old, you're just well done,<BR>
-The party's just begun, my son!
-</P>
+  .box p .big {
+    font-size: 30px;
+    color: #FF0000;
+  }
 
-<H2>Links</H2>
+  marquee {
+    font-size: 35px;
+    font-weight: bold;
+    color: #FF00FF;
+    background: #FFFF00;
+    padding: 10px;
+    border: 3px dashed #FF0000;
+    margin: 20px 0;
+  }
 
-<P>
-<A HREF="">View Birthday Photos</A><BR>
-<A HREF="">Send Birthday Wishes</A><BR>
-<A HREF="http://info.cern.ch/hypertext/WWW/TheProject.html">About the World Wide Web</A>
-</P>
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
 
-<HR>
+  .gallery .icon {
+    font-size: 60px;
+    background: #FFFFFF;
+    border: 3px solid #FFA500;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 #00FF00;
+  }
 
-<ADDRESS>
-Made by hand in HTML - 1991<BR>
-Best viewed in NCSA Mosaic at 640x480
-</ADDRESS>
+  .counter {
+    background: #000000;
+    color: #00FF00;
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    padding: 8px 20px;
+    display: inline-block;
+    border: 2px inset #888888;
+    margin: 10px 0;
+  }
 
-<P><IMG SRC="" ALT="[Under Construction]"></P>
+  .footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #666666;
+  }
 
-</BODY>
-</HTML>
+  .footer a {
+    color: #0000FF;
+  }
+
+  .blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  .sparkle {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+    font-size: 24px;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<marquee scrollamount="10">🎉 🎂 🎈 HAPPY BIRTHDAY !!! 🎈 🎂 🎉</marquee>
+
+<h1>
+  HAPPY<br>
+  <em>BIRTHDAY</em>
+  ALEX !!!
+</h1>
+
+<span class="rainbow">🌟🌟🌟 YOU ARE 35 !!! 🌟🌟🌟</span>
+
+<span class="cake">🎂</span>
+
+<div class="box">
+  <h2>❤️ ABOUT THE BIRTHDAY BOY ❤️</h2>
+  <p>
+    <span class="big">ALEX</span> is <span class="big">35</span> years old !!!<br>
+    He is <span class="big">SUPER</span> cool and <span class="big">AWSOME</span> !!!<br>
+    We love him <span class="big">VERY MUCH</span> !!! 😍😍😍
+  </p>
+</div>
+
+<div class="gallery">
+  <span class="icon">🎈</span>
+  <span class="icon">🎉</span>
+  <span class="icon">🎁</span>
+  <span class="icon">🌟</span>
+  <span class="icon">🎊</span>
+  <span class="icon">💫</span>
+</div>
+
+<div class="box">
+  <h2>🎵 BIRTHDAY SONG 🎵</h2>
+  <p>
+    Happy birthday to you !<br>
+    Happy birthday to you !<br>
+    Happy birthday dear <span class="big">ALEX</span><br>
+    Happy birthday to you !!! 🎤🎵
+  </p>
+</div>
+
+<marquee scrollamount="6" direction="right">💖 HOPE YOU HAVE THE BEST DAY EVER !!! 💖</marquee>
+
+<div style="font-size: 40px; margin: 15px 0;">
+  <span class="sparkle">⭐</span>
+  <span class="blink">🎊</span>
+  <span class="sparkle">✨</span>
+  <span class="blink">🎉</span>
+  <span class="sparkle">⭐</span>
+  <span class="blink">🎊</span>
+  <span class="sparkle">✨</span>
+</div>
+
+<div style="background: #00BFFF; color: #FFFFFF; padding: 10px; max-width: 300px; margin: 10px auto; border-radius: 15px; border: 3px solid #FFFFFF;">
+  <div style="font-size: 20px; font-weight: bold;">🖱️ VISITOR COUNT 🖱️</div>
+  <div class="counter">00035</div>
+</div>
+
+<div class="box" style="background: #FFF0F5;">
+  <h2>📝 WISHES FOR ALEX 📝</h2>
+  <p>
+    🌟 May all your dreams come true !<br>
+    🍕 May you eat lots of pizza !<br>
+    🎮 May you win every game !<br>
+    💪 May you stay forever young !<br>
+    😂 May you laugh every day !!!
+  </p>
+</div>
+
+<marquee scrollamount="8" behavior="alternate">🎈 🎈 🎈 THANK YOU FOR VISITING !!! 🎈 🎈 🎈</marquee>
+
+<div class="footer">
+  <p>
+    Made by a 6 year old in computer class ⭐<br>
+    <a href="mailto:alex@birthday.com">Send Alex a birthday email !</a><br>
+    Last updated: June 20, 2026
+  </p>
+  <p style="font-size: 10px; margin-top: 10px;">
+    ⚠️ This page is best viewed in Internet Explorer 4.0 at 800x600 ⚠️
+  </p>
+</div>
+
+<audio autoplay loop>
+  <source src="" type="audio/mid">
+</audio>
+
+<!-- Hidden MIDI player message -->
+<div style="color: transparent; font-size: 1px;">midi file would play happy birthday here</div>
+
+</body>
+</html>
